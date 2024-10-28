@@ -1,0 +1,45 @@
+{
+  "name": "social-protection-landing-page",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.18",
+    "@chakra-ui/react": "^2.5.5",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fontsource-variable/noto-sans-khmer": "^5.1.0",
+    "@fontsource/inter": "^5.1.0",
+    "@types/aos": "^3.0.7",
+    "aos": "^3.0.0-beta.6",
+    "framer-motion": "^10.10.0",
+    "next": "14.2.6",
+    "next-intl": "^2.12.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hook-form": "^7.53.0",
+    "react-icons": "^4.8.0",
+    "react-scroll": "^1.9.0",
+    "react-slick": "^0.30.2",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-scroll": "^1",
+    "@types/react-slick": "^0",
+    "autoprefixer": "^10.0.1",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

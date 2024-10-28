@@ -1,0 +1,41 @@
+image: docker:latest
+
+stages:
+  - build
+  - deploy
+
+build:dev:
+  stage: build
+  script:
+    - echo "Start build..."
+    - docker login -u $DOCKER_USER -p $DOCKER_PASSWORD $DOCKER_SERVER
+    - docker build --target service --build-arg CONFIGURATION=development -t docker.optistech.com/sp-landing-page-dev .
+    - docker push docker.optistech.com/sp-landing-page-dev
+    - docker image rm docker.optistech.com/sp-landing-page-dev
+  tags:
+    - ih-runner
+  only:
+    - dev
+
+deploy:dev:
+  stage: deploy
+  before_script:
+  - apk --no-cache add python3 nodejs npm git curl build-base
+  script:
+    - curl -LO https://storage.googleapis.com/kubernetes-release/release/v1.21.0/bin/linux/amd64/kubectl
+    - chmod +x ./kubectl
+    - mv ./kubectl /usr/local/bin/kubectl
+    - export KUBECONFIG=$IH_K3S_TOKEN
+    - kubectl get nodes
+    # create/update the kubernetes resources
+    - kubectl apply -f $K3S_MANIFEST_DEV
+    # Restart the deployment so as to pull the latest version of the container image
+    - kubectl rollout restart deployment/sp-landing-page-dev
+  environment:
+    name: development
+  tags:
+    - ih-runner
+  only:
+    - dev
+  dependencies:
+    - build:dev

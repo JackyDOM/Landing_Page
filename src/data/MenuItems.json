@@ -1,0 +1,32 @@
+[
+  {
+    "title": "home",
+    "path": "/",
+    "icon": "RxHome"
+  },
+  {
+    "title": "spr",
+    "path": "spr",
+    "icon": "BsDatabaseCheck"
+  },
+  {
+    "title": "digitalPlatform",
+    "path": "portal",
+    "icon": "LiaHandsSolid"
+  },
+  {
+    "title": "members",
+    "path": "members",
+    "icon": "RiUserStarLine"
+  },
+  {
+    "title": "contact-us",
+    "path": "contact",
+    "icon": "MdOutlineContactPage"
+  },
+  {
+    "title": "q&a",
+    "path": "faq",
+    "icon": "AiOutlineMessage"
+  }
+]
