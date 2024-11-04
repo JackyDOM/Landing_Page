@@ -1,26 +1,26 @@
 [
   {
     "image": "/images/manage-benefit-information.webp",
-    "title": "គ្រប់គ្រងព័ត៌មានអត្ថគាហក"
-  },
-  {
-    "image": "/images/opening-cash-benefits.webp",
-    "title": "ការបើកផ្ដល់អត្ថប្រយោជន៍ជាសាច់ប្រាក់"
-  },
-  {
-    "image": "/images/monitoring-and-evaluation-system.webp",
-    "title": "ប្រព័ន្ធតាមដាន និងវាយតម្លៃ"
+    "title": "គ្រប់គ្រងទិន្នន័យចុះបញ្ជីអ្នកទទួលផល"
   },
   {
     "image": "/images/comments-against-proposal.webp",
-    "title": "មតិជំទាស់ នឹងសំណូមពរ"
+    "title": "ផ្ទៀងផ្ទាត់អត្តសញ្ញាណគាំពារសង្គម តាមរយៈ SPID"
+  },
+  {
+    "image": "/images/monitoring-and-evaluation-system.webp",
+    "title": "ធ្វើសមកាលកម្មទិន្នន័យ ជាប្រព័ន្ធអេកូឡូស៊ីរួម"
+  },
+  {
+    "image": "/images/opening-cash-benefits.webp",
+    "title": "គ្រប់គ្រងការបើកផ្តល់អត្ថប្រយោជន៍គាំពារសង្គម"
   },
   {
     "image": "/images/assessment-socio-economic-status.webp",
-    "title": "ការវាយតម្លៃស្ថានភាពសង្គម-សេដ្ឋកិច្ច"
+    "title": "តាមដាន និងវាយតម្លៃ"
   },
   {
     "image": "/images/other-transactions.webp",
-    "title": "ប្រតិបត្តិការផ្សេងៗ"
+    "title": "មតិជំទាស់ និងសំណូមពរ"
   }
 ]

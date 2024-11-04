@@ -11,43 +11,43 @@
 
   "Hero": {
     "title": "Digital Social Protection Platform",
-    "content": "Register, Verify Social Protection identity data and Transfer various Social Protection benefits packages through a Single Digital Platform",
-    "start-btn": "Start",
+    "content": "Register and verify social protection identity data, provide various social protection benefits and services through an integrated digital platform.",
+    "start-btn": "Getting Started",
     "video-btn": "Watch Video"
   },
 
   "SPR" : {
     "title": "Social Protection Registry",
-    "what_is_spr": "What is Digital Social Protection Registry?",
-    "what_is_spr_desc": "Social Protection Registry is a Social Protection Identity data Data Exchange which play an important role toward achieving Interoperability between Social Protection and Social Security Operators in Cambodia which allowing Data Harmonization, Data Synchronization within the Eco-system including Demographic, Bio-metric and Socioeconomic data",
-    "advantages_of_spr": "Advantages of Social Protection Registry",
+    "what_is_spr": "What is Social Protection Registry?",
+    "what_is_spr_desc": "Social Protection Registry is a unified registry that facilitates interoperability between the databases of all social assistance and social security operators. It allows for synchronization, updating, and data exchange within a digital ecosystem.",
+    "advantages_of_spr": "Benefits of the Social Protection Registry",
     "advantages_of_spr_items": {
-      "item1": "Data Synchronization in Social Protection",
-      "item2": "Provide Unique Social Protection Identifier (SPID)  for usage in receiving benefit from Social Protection Schemes",
-      "item3": "Prevention of redundant registrations and data collection for Social Protection and Social Security schemes",
-      "item4": "Expedited verification of beneficiary identification leading to a decrease in fraud, overuse, or duplication of benefits"
+      "item1": "Harmonizes data across the entire social protection system.",
+      "item2": "Provides a Social Protection Identification Number (SPID) for beneficiary and target group identification.",
+      "item3": "Avoids duplicated identity data registrations.",
+      "item4": "Ensures identity data verification within the social protection system, reducing identity fraud and duplicate benefit provision."
     }
   },
 
   "Portal": {
-    "title": "Digital Social Protection Single Registration Portal",
-    "what_is_portal": "What is Digital Social Protection Single Registration Portal?",
-    "what_isPortal_desc": "Single Registration Portal is The One Stop Service for register beneficiary into Social Protection and Social Security programs and schemes assisting in eliminate redundant processes and registrations",
-    "advantages_of_portal": "Benefits of Digital Social Protection Single Registration Portal",
+    "title": "Digital Social Protection Platform",
+    "what_is_portal": "What is Digital Social Protection Platform?",
+    "what_isPortal_desc": "Digital Social Protection Platform is a unified digital platform that facilitates registration, identity verification, and eligibility check for accessing social protection benefits and provides various social protection services.",
+    "advantages_of_portal": "Benefits of the Digital Social Protection Platform",
     "advantages_of_portal_items": {
-      "item1": "Enhancing service efficiency in Social Protection",
-      "item2": "Harmonization of Social Registry, Social Protection Data Management, and Digital Infrastructure toward Interoperability of ICT systems as an Eco-system",
-      "item3": "Improve Data quality and readiness to assist Management and Policy maker in strategic decision-making (Evidence-based)",
-      "item4": "Improve and Enhance coordination and communication between stakeholders and activities for revolutionize Digital Social Protection"
+      "item1": "Enhances efficiency and speed in implementing national social assistance programs and social security schemes.",
+      "item2": "Harmonizes the registration and data management systems for social protection.",
+      "item3": "Improves the quality and timeliness of data.",
+      "item4": "Provides better accessibility for beneficiaries to access various social protection services."
     },
     "main_feature": "Main Features",
     "important_features": {
       "feature1": "Integrated Beneficiary Management",
-      "feature2": "Payment Platform",
-      "feature3": "Monitoring and Data Analytics",
-      "feature4": "Feedback and Complaint Management",
-      "feature5": "Socioeconomic Assessment",
-      "feature6": "Other Cross-cutting Operation"
+      "feature2": "Verify social protection identity through SPID",
+      "feature3": "Synchronize data within an integrated ecosystem",
+      "feature4": "Government-to-Person 4.0 (G2P)",
+      "feature5": "Monitoring and Evaluation",
+      "feature6": "Grievance Redressal"
     }
   },
 
@@ -59,36 +59,36 @@
     "title": "Questions & Answers",
     "general_info": "General",
     "general_info_list": {
-      "info1_q": "What is Social Protection Registry?",
-      "info1_a": "hello world!!",
-      "info2_q": "What are the benefits of Social Protection Registry?",
-      "info2_a": "hello world!!",
-      "info3_q": "What is Digital Social Protection Platform?",
-      "info3_a": "hello world!!",
-      "info4_q": "How does Social Protection Registry benefit Social Protection?",
-      "info4_a": "hello world!!"
+      "info1_q": "What is the Digital Social Protection Platform?",
+      "info1_a": "Register and verify social protection identity data, provide various social protection benefits and services through an integrated digital platform.",
+      "info2_q": "How many social protection programs that are currently available on Digital Social Protection Platform?",
+      "info2_a": "Current Social Protection Programs that are available on Digital Social Protection Platform are: Family Packages, IDPoor, and PWD",
+      "info3_q": "What are the main features of the Digital Social Protection Platform?",
+      "info3_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
+      "info4_q": "What are the actions required from operators in order to onboard their MIS onto the Digital Social Protection Platform?",
+      "info4_a": "In order to onboard operator's MIS onto Digital Social Protection Platform please refer to the implementation document \n\n {link}"
     },
     "db_spr": "Social Protection Registry",
     "db_spr_list": {
       "db_spr1_q": "What is Social Protection Registry?",
-      "db_spr1_a": "hello world!!",
+      "db_spr1_a": "Social Protection Registry is a unified registry that facilitates interoperability between the databases of all social assistance and social security operators. It allows for synchronization, updating, and data exchange within a digital ecosystem.",
       "db_spr2_q": "What are the benefits of Social Protection Registry?",
-      "db_spr2_a": "hello world!!",
-      "db_spr3_q": "What is Digital Social Protection Platform?",
-      "db_spr3_a": "hello world!!",
+      "db_spr2_a": "Harmonizes data across the entire social protection system, Provides a Social Protection Identification Number (SPID) for beneficiary and target group identification, Avoids duplicated identity data registrations, and Ensures identity data verification within the social protection system, reducing identity fraud and duplicate benefit provision.",
+      "db_spr3_q": "What are the main functions of Digital Social Protection Platform?",
+      "db_spr3_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
       "db_spr4_q": "How does Social Protection Registry benefit Social Protection?",
-      "db_spr4_a": "hello world!!"
+      "db_spr4_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must..."
     },
     "digital_platform_spr": "Digital Social Protection Platform",
     "dp_spr_list": {
-      "dp_spr1_q": "What is Social Protection Registry?",
-      "dp_spr1_a": "hello, Digital Social Protection Platform!!",
-      "dp_spr2_q": "What are the benefits of Social Protection Registry?",
-      "dp_spr2_a": "hello world!!",
-      "dp_spr3_q": "What is Digital Social Protection Platform?",
-      "dp_spr3_a": "hello world!!",
-      "dp_spr4_q": "How does Social Protection Registry benefit Social Protection?",
-      "dp_spr4_a": "hello world!!"
+      "dp_spr1_q": "What is the Digital Social Protection Platform?",
+      "dp_spr1_a": "Digital Social Protection Platform is a unified digital platform that facilitates registration, identity verification, and eligibility check for accessing social protection benefits and provides various social protection services.",
+      "dp_spr2_q": "What are the benefits of the Digital Social Protection Platform?",
+      "dp_spr2_a": "Enhances efficiency and speed in implementing national social assistance programs and social security schemes, Harmonizes the registration and data management systems for social protectionImproves the quality and timeliness of data, Provides better accessibility for beneficiaries to access various social protection services.",
+      "dp_spr3_q": "What are the main functions of the Digital Social Protection Platform?",
+      "dp_spr3_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
+      "dp_spr4_q": "What are the necessary actions that operators are required in order to integrate their MIS systems into the Digital Social Protection Platform registration system?",
+      "dp_spr4_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must..."
     }
   },
 
