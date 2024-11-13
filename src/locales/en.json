@@ -61,34 +61,28 @@
     "general_info_list": {
       "info1_q": "What is the Digital Social Protection Platform?",
       "info1_a": "Register and verify social protection identity data, provide various social protection benefits and services through an integrated digital platform.",
-      "info2_q": "How many social protection programs that are currently available on Digital Social Protection Platform?",
-      "info2_a": "Current Social Protection Programs that are available on Digital Social Protection Platform are: Family Packages, IDPoor, and PWD",
-      "info3_q": "What are the main features of the Digital Social Protection Platform?",
-      "info3_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
-      "info4_q": "What are the actions required from operators in order to onboard their MIS onto the Digital Social Protection Platform?",
-      "info4_a": "In order to onboard operator's MIS onto Digital Social Protection Platform please refer to the implementation document \n\n {link}"
+      "info2_q": "How does Social Protection Registry benefit Social Protection?",
+      "info2_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must follow this Integrated Document \n\n https://digitalsp.gov.kh/",
+      "info3_q": "What are the necessary actions that operators are required in order to integrate their MIS systems into the Digital Social Protection Platform registration system?",
+      "info3_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must follow this Integrated Document \n\n https://digitalsp.gov.kh/"
     },
     "db_spr": "Social Protection Registry",
     "db_spr_list": {
       "db_spr1_q": "What is Social Protection Registry?",
       "db_spr1_a": "Social Protection Registry is a unified registry that facilitates interoperability between the databases of all social assistance and social security operators. It allows for synchronization, updating, and data exchange within a digital ecosystem.",
-      "db_spr2_q": "What are the benefits of Social Protection Registry?",
-      "db_spr2_a": "Harmonizes data across the entire social protection system, Provides a Social Protection Identification Number (SPID) for beneficiary and target group identification, Avoids duplicated identity data registrations, and Ensures identity data verification within the social protection system, reducing identity fraud and duplicate benefit provision.",
-      "db_spr3_q": "What are the main functions of Digital Social Protection Platform?",
-      "db_spr3_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
-      "db_spr4_q": "How does Social Protection Registry benefit Social Protection?",
-      "db_spr4_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must..."
+      "db_spr2_q": "What are the main functions of Digital Social Protection Platform?",
+      "db_spr2_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
+      "db_spr3_q": "How does Social Protection Registry benefit Social Protection?",
+      "db_spr3_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must follow this Integrated Document \n\n https://digitalsp.gov.kh/"
     },
     "digital_platform_spr": "Digital Social Protection Platform",
     "dp_spr_list": {
       "dp_spr1_q": "What is the Digital Social Protection Platform?",
       "dp_spr1_a": "Digital Social Protection Platform is a unified digital platform that facilitates registration, identity verification, and eligibility check for accessing social protection benefits and provides various social protection services.",
-      "dp_spr2_q": "What are the benefits of the Digital Social Protection Platform?",
-      "dp_spr2_a": "Enhances efficiency and speed in implementing national social assistance programs and social security schemes, Harmonizes the registration and data management systems for social protectionImproves the quality and timeliness of data, Provides better accessibility for beneficiaries to access various social protection services.",
-      "dp_spr3_q": "What are the main functions of the Digital Social Protection Platform?",
-      "dp_spr3_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
-      "dp_spr4_q": "What are the necessary actions that operators are required in order to integrate their MIS systems into the Digital Social Protection Platform registration system?",
-      "dp_spr4_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must..."
+      "dp_spr2_q": "What are the main functions of the Digital Social Protection Platform?",
+      "dp_spr2_a": "Integrated Beneficiary Management, Verify social protection identity through SPID, Synchronize data within an integrated ecosystem, Government-to-Person 4.0 (G2P), Monitoring and Evaluation, Grievance Redressal",
+      "dp_spr3_q": "What are the necessary actions that operators are required in order to integrate their MIS systems into the Digital Social Protection Platform registration system?",
+      "dp_spr3_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must follow this Integrated Document \n\n https://digitalsp.gov.kh/"
     }
   },
 
