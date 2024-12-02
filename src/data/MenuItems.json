@@ -5,6 +5,11 @@
     "icon": "RxHome"
   },
   {
+    "title": "videos",
+    "path": "videos",
+    "icon": "FiAnchor"
+  },
+  {
     "title": "spr",
     "path": "spr",
     "icon": "BsDatabaseCheck"

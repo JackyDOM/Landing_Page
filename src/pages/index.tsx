@@ -5,6 +5,7 @@ import { HiArrowUp } from "react-icons/hi";
 import useAOS from "@/hooks/useAOS";
 import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
+import Videos from "@/components/Videos";
 const HeroComponent = dynamic(() => import("@/components/Hero"));
 const SPRComponent = dynamic(() => import("@/components/SPR"));
 const PortalComponent = dynamic(() => import("@/components/Portal"));
@@ -48,6 +49,7 @@ const Home = () => {
     <Box>
       <Navbar/>
       <Element name="/" id="/" href='' className="xl:h-[calc(100vh-130px)] w-auto"> <HeroComponent /> </Element>
+      <Element name="videos" id="videos" href=''> <Videos/> </Element>
       <Element name="spr" id="spr" href=''> <SPRComponent/> </Element>
       <Element name="portal" id="portal" href=''> <PortalComponent/> </Element>
       <Element name="members" id="members" href=''> <Members/> </Element>

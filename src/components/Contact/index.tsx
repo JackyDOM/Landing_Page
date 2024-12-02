@@ -56,7 +56,7 @@ const Contact = () => {
   ];
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="bg-bgGraySection pb-8">
+    <form onSubmit={handleSubmit(onSubmit)} action="mailto:gs_nspc@mef.gov.kh" className="bg-bgGraySection pb-8">
       <SectionComponent title={t("title")} isBorderBottom isPadding>
         <div 
           className="max-w-screen-lg mx-auto grid md:grid-cols-2 mt-10 gap-4 lg:gap-7 md:mb-0"

@@ -1,6 +1,7 @@
 {
   "MenuBar": {
     "home": "Home",
+    "videos": "Videos",
     "spr": "SPR",
     "digitalPlatform": "Digital Platform",
     "about-us": "About Us",
@@ -14,6 +15,10 @@
     "content": "Register and verify social protection identity data, provide various social protection benefits and services through an integrated digital platform.",
     "start-btn": "Getting Started",
     "video-btn": "Watch Video"
+  },
+
+  "Videos": {
+    "title": "Videos"
   },
 
   "SPR" : {
