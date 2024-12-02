@@ -1,0 +1,82 @@
+import { Box, Flex, Modal, ModalBody, ModalCloseButton, ModalContent, ModalOverlay, useDisclosure } from "@chakra-ui/react"
+import SectionComponent from "../SectionComponent";
+import Image from "next/image";
+import { useTranslations } from "next-intl";
+import { useState } from "react";
+
+const VideoItems = [
+    {
+      thumbnail: "https://i.ytimg.com/vi/wN3KT1LDaHk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxirBitYQaKSoA44s3iX1brp2vOQ",
+      title: "SPR",
+      link: "https://www.youtube.com/embed/wN3KT1LDaHk?si=Uizxev4CVe2Dwevn&autoplay=1&mute=1",
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/wN3KT1LDaHk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxirBitYQaKSoA44s3iX1brp2vOQ",
+      title: "SPR",
+      link: "https://www.youtube.com/embed/wN3KT1LDaHk?si=Uizxev4CVe2Dwevn&autoplay=1&mute=1",
+    },
+    {
+      thumbnail: "https://i.ytimg.com/vi/wN3KT1LDaHk/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCxirBitYQaKSoA44s3iX1brp2vOQ",
+      title: "SPR",
+      link: "https://www.youtube.com/embed/wN3KT1LDaHk?si=Uizxev4CVe2Dwevn&autoplay=1&mute=1",
+    },
+  ];
+
+const Videos = () => {
+  const t = useTranslations("Videos");
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+
+  const handleThumbnailClick = (videoLink: string) => {
+    setSelectedVideo(videoLink);
+    onOpen();
+  };
+
+  return (
+    <Box className="pb-4">
+      <SectionComponent title={t("title")} isPadding isBorderBottom>
+        <Box className="flex justify-around items-center flex-wrap gap-4">
+          {VideoItems.map((video: any, idx: number) => (
+            <div key={idx} className="flex flex-col items-center w-[300px] text-center cursor-pointer" onClick={() => handleThumbnailClick(video.link)}>
+              <Image
+                src={video.thumbnail}
+                alt={video.title}
+                width={300}
+                height={180}
+                loading="lazy"
+                unoptimized
+                className="rounded-lg"
+              />
+              <h3 className="text-lg font-medium mt-2">{video.title}</h3>
+            </div>
+          ))}
+        </Box>
+      </SectionComponent>
+
+      {/* Modal for Video Playback */}
+      <Modal isOpen={isOpen} onClose={onClose} size="4xl" isCentered>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalCloseButton />
+          <ModalBody>
+            {selectedVideo && (
+              <Box className="w-full aspect-video">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={selectedVideo}
+                  title="Video Player"
+                  frameBorder="0"
+                  allow="autoplay; encrypted-media; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </Box>
+            )}
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </Box>
+  );
+};
+  
+  export default Videos;

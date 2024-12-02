@@ -20,6 +20,10 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
       errors.push("A valid email address is required.");
     }
 
+    if (!message || typeof message !== "string" || message.trim() === "") {
+      errors.push("Message is required.");
+    }
+
     // Check for errors
     if (errors.length > 0) {
       return res.status(400).json({ message: "Validation failed", errors });
