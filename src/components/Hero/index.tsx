@@ -81,7 +81,7 @@ const HeroComponent = () => {
               >
                 {t("start-btn")}
               </ReactScrollButton>
-              <Button
+              {/* <Button
                 className="
                   !text-primary 
                   !bg-transparent 
@@ -100,7 +100,7 @@ const HeroComponent = () => {
                 onClick={onOpen}
               >
                 {t("video-btn")}
-              </Button>
+              </Button> */}
             </HStack>
           </Box>
 

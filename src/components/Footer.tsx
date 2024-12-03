@@ -101,6 +101,27 @@ const Footer = () => {
               </Text>
             </Link>
           </Box>
+
+          {/* Download Section */}
+          <Box className="text-[#B5B5C3] z-20">
+            <Text>{t("download_drivers")}</Text>
+            <Box className="space-y-2">
+              <a
+                href="/images/digital-spr-nursery-registration-portal.png"
+                download="file1.pdf"
+                className="flex gap-2.5 items-baseline xl:items-center text-[#7E8299] hover:text-primary"
+              >
+                {t("webcam_driver")}
+              </a>
+              <a
+                href="/images/digital-spr-nursery-registration-portal.png"
+                download="file2.docx"
+                className="flex gap-2.5 items-baseline xl:items-center text-[#7E8299] hover:text-primary"
+              >
+                {t("fingerprint_driver")}
+              </a>
+            </Box>
+          </Box>
         </Box>
       </Box>
       <Box className="border-t border-slate-200 p-5 lg:absolute lg:bottom-0 !w-full">
