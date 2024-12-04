@@ -35,6 +35,7 @@ const Videos = () => {
   return (
     <Box className="pb-4">
       <SectionComponent title={t("title")} isPadding isBorderBottom>
+        <Box className="mt-5"></Box>
         <Box className="flex justify-around items-center flex-wrap gap-4">
           {VideoItems.map((video: any, idx: number) => (
             <div key={idx} className="flex flex-col items-center w-[300px] text-center cursor-pointer" onClick={() => handleThumbnailClick(video.link)}>

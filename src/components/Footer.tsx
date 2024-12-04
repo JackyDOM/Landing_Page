@@ -107,19 +107,19 @@ const Footer = () => {
             <Text>{t("download_drivers")}</Text>
             <Box className="space-y-2">
               <a
-                href="/images/digital-spr-nursery-registration-portal.png"
-                download="file1.pdf"
+                href="/drivers/SecuGenLegacy_DriverInstaller_v2_4.zip"
+                download="SecuGenLegacy_DriverInstaller_v2_4.zip"
                 className="flex gap-2.5 items-baseline xl:items-center text-[#7E8299] hover:text-primary"
               >
-                {t("webcam_driver")}
+                {t("first_driver")}
               </a>
-              <a
-                href="/images/digital-spr-nursery-registration-portal.png"
-                download="file2.docx"
+              {/* <a
+                href="/drivers/SGI_BWAPI_WIN_64bit_6.exe"
+                download="SGI_BWAPI_WIN_64bit_6.exe"
                 className="flex gap-2.5 items-baseline xl:items-center text-[#7E8299] hover:text-primary"
               >
-                {t("fingerprint_driver")}
-              </a>
+                {t("second_driver")}
+              </a> */}
             </Box>
           </Box>
         </Box>
