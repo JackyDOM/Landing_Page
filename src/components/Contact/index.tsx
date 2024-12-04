@@ -10,8 +10,8 @@ type FormValues = {
   firstName: string;
   lastName: string;
   email: string;
-  phoneNumber?: number;
-  message?: string;
+  phoneNumber: number;
+  message: string;
 };
 
 const Contact = () => {
@@ -56,7 +56,8 @@ const Contact = () => {
   ];
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} action="mailto:gs_nspc@mef.gov.kh" className="bg-bgGraySection pb-8">
+    // <form onSubmit={handleSubmit(onSubmit)} action="mailto:gs_nspc@mef.gov.kh" method="post" className="bg-bgGraySection pb-8">
+    <form action="mailto:gs_nspc@mef.gov.kh" method="post" className="bg-bgGraySection pb-8">
       <SectionComponent title={t("title")} isBorderBottom isPadding>
         <div 
           className="max-w-screen-lg mx-auto grid md:grid-cols-2 mt-10 gap-4 lg:gap-7 md:mb-0"
@@ -162,7 +163,10 @@ const Contact = () => {
               <CustomInput
                 label={t("phone_number")}
                 placeholder={`${t("phone_number")}`}
-                {...register("phoneNumber")}
+                errorMessage={errors.phoneNumber?.message}
+                {...register("phoneNumber", {
+                  required: t("phone_number_required")
+                })}
               />
             </Box>
 
@@ -170,14 +174,16 @@ const Contact = () => {
             <FormControl isInvalid={!!errors.message}>
               <FormLabel className="!text-oldPrimary !text-lg">{t("message")}</FormLabel>
               <Textarea 
-                placeholder={t("message_placeholder")}
+                placeholder={`${t("message_placeholder")}`}
                 className="
                   !placeholder:text-placeholder 
                   !placeholder:font-medium 
                   !placeholder:text-base 
                   !rounded-lg
                 "
-                {...register("message")}
+                {...register("message", {
+                  required: t("message_required")
+                })}
               />
             </FormControl>
 

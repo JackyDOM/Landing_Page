@@ -53,11 +53,11 @@ const HeroComponent = () => {
             <Text 
               fontWeight="semibold" 
               mb={2} 
-              className="text-center xl:text-start text-[36px] sm:text-[44px]"
+              className="text-center xl:text-start text-[34px] sm:text-[42px]"
             >
               {t("title")}
             </Text>
-            <Text className="xl:max-w-[600px] lg:px-14 xl:px-0 text-[24px] sm:text-[30px]">
+            <Text className="xl:max-w-[600px] lg:px-14 xl:px-0 text-[22px] sm:text-[28px]">
               {t("content")}
             </Text>
             <HStack className="mt-8 !grid sm:!flex justify-center xl:justify-start !gap-8 sm:!gap-4">
