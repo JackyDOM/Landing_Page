@@ -18,26 +18,37 @@ const Contact = () => {
   const t = useTranslations("Contact");
   const { register, handleSubmit, reset, formState: { errors } } = useForm<FormValues>();
 
-  const onSubmit: SubmitHandler<FormValues> = async (data) => {
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+  // const onSubmit: SubmitHandler<FormValues> = async (data) => {
+  //   try {
+  //     const response = await fetch('/api/contact', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //       },
+  //       body: JSON.stringify(data),
+  //     });
 
-      if (response.ok) {
-        const result = await response.json();
-        console.log(result.message); // Handle success
-      } else {
-        console.error('Form submission failed');
-      }
-      reset();
-    } catch (error) {
-      console.error('Error submitting form:', error);
-    }
+  //     if (response.ok) {
+  //       const result = await response.json();
+  //       console.log(result.message); // Handle success
+  //     } else {
+  //       console.error('Form submission failed');
+  //     }
+  //     reset();
+  //   } catch (error) {
+  //     console.error('Error submitting form:', error);
+  //   }
+  // };
+  const onSubmit = (data: FormValues) => {
+    const email = "gs_nspc@mef.gov.kh";
+    const subject = encodeURIComponent("Contact Form Submission");
+    const body = encodeURIComponent(data.message);
+
+    // Construct the mailto link
+    const mailtoLink = `mailto:${email}?subject=${subject}&body=${body}`;
+
+    // Open the mailto link
+    window.location.href = mailtoLink;
   };
 
   const ContactItems = [
@@ -56,8 +67,8 @@ const Contact = () => {
   ];
 
   return (
-    // <form onSubmit={handleSubmit(onSubmit)} action="mailto:gs_nspc@mef.gov.kh" method="post" className="bg-bgGraySection pb-8">
-    <form action="mailto:gs_nspc@mef.gov.kh" method="post" className="bg-bgGraySection pb-8">
+    <form onSubmit={handleSubmit(onSubmit)} className="bg-bgGraySection pb-8">
+    {/* <form action="mailto:gs_nspc@mef.gov.kh" method="post" className="bg-bgGraySection pb-8"> */}
       <SectionComponent title={t("title")} isBorderBottom isPadding>
         <div 
           className="max-w-screen-lg mx-auto grid md:grid-cols-2 mt-10 gap-4 lg:gap-7 md:mb-0"
@@ -162,7 +173,7 @@ const Contact = () => {
               />
               <CustomInput
                 label={t("phone_number")}
-                placeholder={`${t("phone_number")}`}
+                placeholder={`${t("phone_number")} *`}
                 errorMessage={errors.phoneNumber?.message}
                 {...register("phoneNumber", {
                   required: t("phone_number_required")
@@ -174,7 +185,7 @@ const Contact = () => {
             <FormControl isInvalid={!!errors.message}>
               <FormLabel className="!text-oldPrimary !text-lg">{t("message")}</FormLabel>
               <Textarea 
-                placeholder={`${t("message_placeholder")}`}
+                placeholder={`${t("message_placeholder")} *`}
                 className="
                   !placeholder:text-placeholder 
                   !placeholder:font-medium 
