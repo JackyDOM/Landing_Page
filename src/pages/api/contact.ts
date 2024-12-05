@@ -7,17 +7,35 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     // Validation
     const errors: string[] = [];
 
+    const nameRegex = /^[a-zA-Z\s-]+$/;
     if (!firstName || typeof firstName !== "string" || firstName.trim() === "") {
       errors.push("First name is required.");
+    }
+    if(!nameRegex.test(firstName)) {
+      errors.push("First name should not contain special characters.");
     }
 
     if (!lastName || typeof lastName !== "string" || lastName.trim() === "") {
       errors.push("Last name is required.");
     }
+    if(!nameRegex.test(lastName)) {
+      errors.push("First name should not contain special characters.");
+    }
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!email || typeof email !== "string" || !emailRegex.test(email)) {
+    if (!email || typeof email !== "string") {
       errors.push("A valid email address is required.");
+    }
+    if( !emailRegex.test(email)) {
+      errors.push("Phone Number should not contain special characters.");
+    }
+
+    const phoneRegex = /^\+?[1-9]\d{1,14}(\s?-?\(?\d+\)?)*$/;
+    if (!phoneNumber || typeof phoneNumber !== "string") {
+      errors.push("Phone Number is required.");
+    }
+    if(!phoneRegex.test(phoneNumber)) {
+      errors.push("Phone Number should not contain special characters.");
     }
 
     if (!message || typeof message !== "string" || message.trim() === "") {
