@@ -62,7 +62,7 @@ const HeroComponent = () => {
             </Text>
             <HStack className="mt-8 !grid sm:!flex justify-center xl:justify-start !gap-8 sm:!gap-4">
               <ReactScrollButton
-                to="videos"
+                to="spr"
                 spy={true}
                 duration={700}
                 smooth={true}

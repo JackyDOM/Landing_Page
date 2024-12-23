@@ -54,11 +54,11 @@ const Contact = () => {
   const ContactItems = [
     {
       icon: "PiPhoneCallFill",
-      content: "+855 023 456 789"
+      content: "+855 10 292 822"
     },
     {
       icon: "IoMailSharp",
-      content: "info@digitalsp.gov.kh"
+      content: "gs_nspc@mef.gov.kh"
     },
     {
       icon: "PiMapPinFill",

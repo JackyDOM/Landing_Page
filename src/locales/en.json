@@ -1,12 +1,12 @@
 {
   "MenuBar": {
     "home": "Home",
-    "videos": "Videos",
     "spr": "SPR",
     "digitalPlatform": "Digital Platform",
     "about-us": "About Us",
     "members": "Members",
     "q&a": "Q&A",
+    "videos": "Videos",
     "contact-us": "Contact Us"
   },
 
@@ -14,10 +14,6 @@
     "title": "Digital Social Protection Platform",
     "content": "Register and verify social protection identity data, provide various social protection benefits and services through an integrated digital platform.",
     "start-btn": "Get Started"
-  },
-
-  "Videos": {
-    "title": "Videos"
   },
 
   "SPR" : {
@@ -88,6 +84,10 @@
       "dp_spr3_q": "What are the necessary actions that operators are required in order to integrate their MIS systems into the Digital Social Protection Platform registration system?",
       "dp_spr3_a": "To integrate their MIS systems into the Digital Social Protection Platform registration system, operators must follow this Integrated Document \n\n https://digitalsp.gov.kh/"
     }
+  },
+
+  "Videos": {
+    "title": "Videos"
   },
 
   "Contact": {

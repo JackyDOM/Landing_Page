@@ -49,10 +49,10 @@ const Home = () => {
     <Box>
       <Navbar/>
       <Element name="/" id="/" href='' className="xl:h-[calc(100vh-130px)] w-auto"> <HeroComponent /> </Element>
-      <Element name="videos" id="videos" href=''> <Videos/> </Element>
       <Element name="spr" id="spr" href=''> <SPRComponent/> </Element>
       <Element name="portal" id="portal" href=''> <PortalComponent/> </Element>
       <Element name="members" id="members" href=''> <Members/> </Element>
+      <Element name="videos" id="videos" href=''> <Videos/> </Element>
       <Element name="contact" id="contact" href=''> <Contact/> </Element>
       <Element name="faq" id="faq" href=''> <FAQComponent/> </Element>
       <Footer/>

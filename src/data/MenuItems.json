@@ -5,11 +5,6 @@
     "icon": "RxHome"
   },
   {
-    "title": "videos",
-    "path": "videos",
-    "icon": "FiAnchor"
-  },
-  {
     "title": "spr",
     "path": "spr",
     "icon": "BsDatabaseCheck"
@@ -23,6 +18,11 @@
     "title": "members",
     "path": "members",
     "icon": "RiUserStarLine"
+  },
+  {
+    "title": "videos",
+    "path": "videos",
+    "icon": "FiAnchor"
   },
   {
     "title": "contact-us",
