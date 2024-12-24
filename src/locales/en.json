@@ -3,11 +3,10 @@
     "home": "Home",
     "spr": "SPR",
     "digitalPlatform": "Digital Platform",
-    "about-us": "About Us",
     "members": "Members",
-    "q&a": "Q&A",
     "videos": "Videos",
-    "contact-us": "Contact Us"
+    "contact-us": "Contact Us",
+    "q&a": "Q&A"
   },
 
   "Hero": {
@@ -121,8 +120,8 @@
     "footer_menu": {
       "menu1": "Social Protection Registry",
       "menu2": "Digital Social Protection",
-      "menu3": "About Us",
-      "menu4": "Members",
+      "menu3": "Members",
+      "menu4": "Videos",
       "menu5": "Q & A",
       "menu6": "Contact Us"
     }

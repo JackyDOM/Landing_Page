@@ -10,8 +10,8 @@ const Footer = () => {
   const FooterItems = [
     { menu: t('footer_menu.menu1'), path: "spr" },
     { menu: t('footer_menu.menu2'), path: "portal" },
-    { menu: t('footer_menu.menu3'), path: "about-us" },
-    { menu: t('footer_menu.menu4'), path: "members" },
+    { menu: t('footer_menu.menu3'), path: "members" },
+    { menu: t('footer_menu.menu4'), path: "videos" },
     { menu: t('footer_menu.menu5'), path: "faq" },
     { menu: t('footer_menu.menu6'), path: "contact" }
   ];
