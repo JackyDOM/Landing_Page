@@ -80,7 +80,7 @@ const HeroComponent = () => {
                   px-8 
                   py-2.5 
                   rounded-lg
-                  max-w-[124px] 
+                  max-w-[132px] 
                   sm:max-w-full
                 "
               >
