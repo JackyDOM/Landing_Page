@@ -58,7 +58,12 @@ const HeroComponent = () => {
               {t("title")}
             </Text>
             <Text className="xl:max-w-[600px] lg:px-14 xl:px-0 text-[22px] sm:text-[28px]">
-              {t("content")}
+              {/* {t("content")} */}
+              {t("content").split("\n").map((line, index) => (
+                <span key={index}>
+                  {line}
+                  <br />
+                </span>))}
             </Text>
             <HStack className="mt-8 !grid sm:!flex justify-center xl:justify-start !gap-8 sm:!gap-4">
               <ReactScrollButton

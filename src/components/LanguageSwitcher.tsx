@@ -58,20 +58,28 @@ const LanguageSwitcher = ({ ...rest }: any) => {
           >
             <MenuItemOption
               value="km"
-              color={"#464255"}
+              // color={"#464255"}
+              color={active === "km" ? "white" : "#464255"}
               fontWeight={400}
               fontSize={"14px"}
               lineHeight={"24px"}
+              bg={active === "km" ? "blue.500" : "transparent"}
+              _hover={{ bg: "blue.100" }}
+              _active={{ bg: "blue.200" }} 
             >
               <MenuOptions src={flag.km} name="KM" width={34} height={23}/>
             </MenuItemOption>
 
             <MenuItemOption
               value="en"
-              color={"#464255"}
+              // color={"#464255"}
+              color={active === "en" ? "white" : "#464255"}
               fontWeight={400}
               fontSize={"14px"}
               lineHeight={"24px"}
+              bg={active === "en" ? "blue.500" : "transparent"}
+              _hover={{ bg: "blue.100" }}
+              _active={{ bg: "blue.200" }}
             >
               <MenuOptions src={flag.en} name="EN" width={34} height={17} />
             </MenuItemOption>

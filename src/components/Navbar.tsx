@@ -167,7 +167,7 @@ const DrawerSPR = ({
     >
       <DrawerContent>
         <DrawerHeader className="border-b border-slate-100 !p-5 flex items-start justify-between">
-          <Image src={"/images/spr1.webp"} alt="spr" width={136} height={87}/>
+          <Image src={"/images/spr1.png"} alt="spr" width={136} height={87}/>
           <IoCloseOutline className="text-[30px] text-gray-500 cursor-pointer" onClick={onClose}/>
         </DrawerHeader>
         <DrawerBody padding={6}>
