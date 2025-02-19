@@ -3,16 +3,22 @@ import { Box } from '@chakra-ui/react';
 import Slider from 'react-slick';
 
 const settings = {
-  dots: true,
+  dots: false,
   arrows: false,
   fade: false,
   infinite: true,
   autoplay: true,
-  speed: 500,
-  autoplaySpeed: 3000,
+  speed: 1000,
+  autoplaySpeed: 1000,
   slidesToShow: 7,
   slidesToScroll: 1,
   centerMode: true,
+  swipe: true,
+  swipeToSlide: true,
+  draggable: true,
+  cssEase: 'linear',
+  pauseOnHover: false,
+  waitForAnimate: true,
   responsive: [
     {
       breakpoint: 1280,
@@ -69,33 +75,49 @@ export default function Carousel({ children }: { children: any }) {
       <style>
         {`
           .slick-center {
-            transform: scale(1.29); 
-            transition: transform 0.5s ease;
+            transform: scale(1);
+            transition: none;
+          }
+
+          .slick-slide.slick-center {
+            transform: scale(1.29);
+            transition: transform 0.2s ease-out;
+          }
+
+          .slick-slide:not(.slick-center) {
+            transform: scale(1);
+            transition: transform 0.2s ease-out;
           }
 
           .slick-slide {
             margin: 34px;
+            cursor: grab;
+            transition: transform 0.3s ease-in-out;
           }
+          
+          .slick-slide:active {
+            cursor: grabbing;
+          }
+
           .slick-track {
             display: flex;
             align-items: center;
             text-align: center;
           }
+
           .slick-dots {
             bottom: 0px;
           }
 
-          /* Inactive dot style */
           .slick-dots li button:before {
             font-size: 10px;
-            color: #ccc; /* Inactive dots color */
+            color: #ccc;
             opacity: 0.5;
             transition: all 0.3s ease;
           }
 
-          /* Active dot style */
           .slick-dots li.slick-active button:before {
-            color: #3D5AF1; /* Active dot color */
+            color: #3D5AF1;
             opacity: 1;
           }
         `}
