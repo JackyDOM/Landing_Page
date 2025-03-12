@@ -7,6 +7,10 @@ import { useTranslations } from "next-intl";
 
 const Footer = () => {
   const t = useTranslations("Footer");
+  const currentYear = new Date().getFullYear();
+
+  const footerText = t("footer1", { year: currentYear });
+
   const FooterItems = [
     { menu: t('footer_menu.menu1'), path: "spr" },
     { menu: t('footer_menu.menu2'), path: "portal" },
@@ -126,7 +130,7 @@ const Footer = () => {
       </Box>
       <Box className="border-t border-slate-200 p-5 lg:absolute lg:bottom-0 !w-full">
         <Box className="max-w-screen-2xl mx-auto grid justify-items-center md:flex md:justify-between">
-          <Text className="text-center text-base">{t("footer1")}</Text>
+          <Text className="text-center text-base">{footerText}</Text>
           <Text className="text-base text-center">{t("footer2")}</Text>
         </Box>
       </Box>
