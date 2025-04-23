@@ -34,6 +34,10 @@ const VideoItems = [
     title: "SPR",
     link: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCAMNSPC%2Fvideos%2F1248523055334844%2F&show_text=0&width=560",
   },
+  {
+    title: "SPR1",
+    link: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCAMNSPC%2Fvideos%2F1248523055334844%2F&show_text=0&width=560",
+  },
 ];
 
 
@@ -99,8 +103,8 @@ const Videos = () => {
           {VideoItems.map((video: any, idx: number) => (
             <Box
               key={idx}
-              className="w-[350px] aspect-video bg-gray-200 rounded-lg overflow-hidden"
-              borderWidth="1px"
+              className="w-[350px] aspect-video bg-gray-300 rounded-lg overflow-hidden"
+              borderWidth="5px"
               borderColor="gray.300"
             >
               <iframe

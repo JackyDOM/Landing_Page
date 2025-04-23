@@ -53,11 +53,11 @@ const HeroComponent = () => {
             <Text 
               fontWeight="semibold" 
               mb={2} 
-              className="text-center xl:text-start text-[34px] sm:text-[42px]"
+              className="text-center xl:text-start text-[30px] sm:text-[45px]"
             >
               {t("title")}
             </Text>
-            <Text className="xl:max-w-[600px] lg:px-14 xl:px-0 text-[22px] sm:text-[28px]">
+            <Text className="xl:max-w-[600px] mt-4 lg:px-14 xl:px-0 text-[14px] sm:text-[28px] text-gray-600 text-balance">
               {/* {t("content")} */}
               {t("content").split("\n").map((line, index) => (
                 <span key={index}>
@@ -65,7 +65,7 @@ const HeroComponent = () => {
                   <br />
                 </span>))}
             </Text>
-            <HStack className="mt-8 !grid sm:!flex justify-center xl:justify-start !gap-8 sm:!gap-4">
+            <HStack className="mt-10 !grid sm:!flex justify-center xl:justify-start !gap-8 sm:!gap-4">
               <ReactScrollButton
                 to="spr"
                 spy={true}

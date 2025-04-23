@@ -67,11 +67,11 @@ const Contact = () => {
   ];
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="bg-bgGraySection pb-8">
+    <form onSubmit={handleSubmit(onSubmit)} className="bg-bgGraySection pb-10">
     {/* <form action="mailto:gs_nspc@mef.gov.kh" method="post" className="bg-bgGraySection pb-8"> */}
       <SectionComponent title={t("title")} isBorderBottom isPadding>
         <div 
-          className="max-w-screen-lg mx-auto grid md:grid-cols-2 mt-10 gap-4 lg:gap-7 md:mb-0"
+          className="max-w-screen-lg mx-auto grid md:grid-cols-2 mt-10 gap-6 lg:gap-7 md:mb-0"
           data-aos="fade-up" 
           data-aos-delay="0"
         >
@@ -101,7 +101,7 @@ const Contact = () => {
                     <Box 
                       className="flex gap-6 text-white items-start" 
                       key={idx} 
-                      data-aos="fade-up" 
+                      data-aos="fade-up"
                       data-aos-delay={delay}
                     >
                       <IconComponent size={24} />
@@ -112,14 +112,14 @@ const Contact = () => {
               </Box>
             </Stack>
 
-            <Box className="grid justify-end absolute right-0 pt-2.5 bottom-0">
+            <Box className="grid justify-end absolute right-0 pt-3.5 bottom-0">
               <Image 
                 src={"/images/ellipse2.webp"} 
                 alt="ellipse2" 
                 width={100} 
                 height={100} 
                 priority
-                className="mb-[-48px] hover:scale-110 hover:ease-in-out hover:duration-700 cursor-pointer"
+                className="mb-[-48px] hover:scale-10 hover:ease-in-out hover:duration-700 cursor-pointer"
               />
               <Image 
                 src={"/images/ellipse1.webp"} 

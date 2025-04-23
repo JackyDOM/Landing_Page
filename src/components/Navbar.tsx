@@ -47,7 +47,10 @@ const Navbar = () => {
         w-full 
         z-30 
         transition-shadow 
-        duration-300 
+        duration-300
+        border-2
+        rounded-bl-3xl 
+        rounded-br-3xl
         ${
           pathname === "/" && !isScrolled ? "shadow-none bg-[#f5f9ff]" : "shadow-md bg-white"
         }
@@ -64,17 +67,19 @@ const Navbar = () => {
             className="flex gap-2.5 cursor-pointer"
             onSetActive={() => setIsScrolled(false)} 
           >
-            <Image 
-              src="/images/spr1.png" 
-              alt="spr" 
-              width={180} 
-              height={91} 
-              unoptimized 
-              priority 
-            />
+            <div className="relative w-[140px] h-[80px] sm:w-[180px] sm:h-[100px] mt-2 ml-1">
+              <Image
+                src="/images/spr1.png"
+                alt="spr"
+                fill
+                className="object-contain"
+                unoptimized
+                priority
+              />
+            </div>
           </Link>
 
-          <div className="xs:hidden lg:flex lg:gap-5 xl:gap-12">
+          <div className="xs:hidden lg:flex lg:gap-10 xl:gap-15">
             {MenuItems.map((menu: IMenuList | any, idx: number) => (
               <Link 
                 key={idx}
@@ -93,7 +98,7 @@ const Navbar = () => {
             ))}
           </div>
           
-          <HStack className="!flex-row-reverse lg:flex">
+          <HStack className="!flex-row-reverse lg:flex mr-1">
             <IoMdMenu 
               size={36} 
               className="text-oldPrimary xs:flex lg:hidden cursor-pointer" 
@@ -122,16 +127,18 @@ const Navbar = () => {
                 offset={-106}
                 className="
                   cursor-pointer 
-                  px-4 
-                  font-medium 
+                  px-5 
+                  font-semibold 
                   hover:text-primary 
                   flex 
                   items-center 
                   gap-5 
                   hover:bg-primary/10 
-                  p-3
-                  border-b
-                  border-slate-50
+                  py-3
+                  border-2
+                  border-slate-100
+                  rounded-full
+                  mt-2
                 "
                 activeClass="text-[#4F9CF9]"
                 onClick={handleMenuClick}
@@ -167,10 +174,19 @@ const DrawerSPR = ({
     >
       <DrawerContent>
         <DrawerHeader className="border-b border-slate-100 !p-5 flex items-start justify-between">
-          <Image src={"/images/spr1.png"} alt="spr" width={136} height={87}/>
-          <IoCloseOutline className="text-[30px] text-gray-500 cursor-pointer" onClick={onClose}/>
+          <div className="relative w-[130px] h-[40px] ml-5 mt-2 mb-5">
+            <Image 
+              src={"/images/spr1.png"} 
+              alt="spr" 
+              width={136} 
+              height={87}
+            />
+          </div>
+          <IoCloseOutline 
+            className="text-[40px] text-blue-800 cursor-pointer mt-3 border-2 rounded-full" 
+            onClick={onClose}/>
         </DrawerHeader>
-        <DrawerBody padding={6}>
+        <DrawerBody padding={5}>
           {children}
         </DrawerBody>
       </DrawerContent>
