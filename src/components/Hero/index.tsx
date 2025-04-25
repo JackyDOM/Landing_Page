@@ -14,16 +14,17 @@ const HeroComponent = () => {
       className="
         bg-[#f5f9ff]
         xl:bg-transparent
-        xl:!bg-[url('/images/Hero-BG.svg')] 
+       
         xl:bg-cover 
         xl:bg-top
         relative
         xl:h-[90vh]
-        overflow-hidden
+       
+        
       "
     >
       <Box 
-        className="max-w-screen-2xl mx-auto relative" 
+        className="max-w-full-2xl mx-auto relative xl:!bg-[url('/images/Hero-BG.svg')]" 
         padding={"106px 20px 20px 20px"} 
         data-aos="zoom-out" 
         data-aos-offset="0"
@@ -51,13 +52,15 @@ const HeroComponent = () => {
             data-aos-offset="0"
           >
             <Text 
-              fontWeight="semibold" 
+              fontWeight="bold" 
               mb={2} 
-              className="text-center xl:text-start text-[30px] sm:text-[45px]"
+              className="text-center xl:text-start text-[30px] 
+              sm:text-[45px] sm:font-khmer-battambang font-khmer-battambang"
             >
               {t("title")}
             </Text>
-            <Text className="xl:max-w-[600px] mt-4 lg:px-14 xl:px-0 text-[14px] sm:text-[28px] text-gray-600 text-balance">
+            <Text className="xl:max-w-[600px] mt-4 lg:px-14 xl:px-0 text-[17px] 
+              sm:text-[18px] text-gray-600 line-clamp-5 font-khmer-battambang">
               {/* {t("content")} */}
               {t("content").split("\n").map((line, index) => (
                 <span key={index}>
@@ -66,6 +69,9 @@ const HeroComponent = () => {
                 </span>))}
             </Text>
             <HStack className="mt-10 !grid sm:!flex justify-center xl:justify-start !gap-8 sm:!gap-4">
+            <div className="flex justify-center">
+              
+
               <ReactScrollButton
                 to="spr"
                 spy={true}
@@ -80,20 +86,43 @@ const HeroComponent = () => {
                   px-8 
                   py-2.5 
                   rounded-lg
-                  max-w-[132px] 
-                  sm:max-w-full
+                  max-w-[200px] 
+                  whitespace-nowrap
+                  text-center
+                  opacity-100
+                  font-khmer-battambang
+                  flex
+                  !flex-row-reverse 
+                  justify-center
+                  shadow-lg shadow-indigo-500/50
                 "
               >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth="1.5"
+                  stroke="currentColor"
+                  className="w-[28px] h-[26px] ml-2"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
                 {t("start-btn")}
               </ReactScrollButton>
+            </div>
               {/* <Button
                 className="
-                  !text-primary 
+                 !text-primary 
                   !bg-transparent 
                   !text-lg 
                   hover:!text-primary/60 
                   max-w-[124px] 
                   sm:max-w-full
+                  !flex-row-reverse
                 "
                 leftIcon={
                   <>
@@ -109,18 +138,19 @@ const HeroComponent = () => {
             </HStack>
           </Box>
 
-          <Image
-            src="/images/hero.png"
-            alt="hero"
-            width={670}
-            height={512}
-            loading="lazy"
-            unoptimized
-            className="xl:ml-[-60px] pt-20 xl:pt-8 animate-breathe !z-50"
-            data-aos="zoom-out"
-            data-aos-delay="150"
-            data-aos-offset="0"
-          />
+          <div className="mt-10 xl:ml-[-60px] pt-20 xl:pt-8 animate-breathe !z-50 
+          relative w-full max-w-[600px] aspect-[670/512]" 
+          data-aos="zoom-out" data-aos-delay="150" data-aos-offset="0">
+            <Image
+              src="/images/hero.png"
+              alt="hero"
+              fill
+              loading="lazy"
+              unoptimized
+              className="object-contain"
+            />
+          </div>
+
         </Box>
       </Box> 
 

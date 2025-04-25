@@ -20,11 +20,15 @@ const SectionComponent = ({
       data-aos="fade-up" 
     >
       <Box display={'grid'} justifyItems={"center"}>
-        <Text 
-          className="text-[30px] sm:text-4xl text-header font-semibold text-center leading-[46px]"
-        >
-          {title}
-        </Text>
+      <Text 
+        className="text-[20px] sm:text-4xl font-semibold text-center leading-[40px] font-khmer-battambang
+                  bg-bgGraySection text-header border border-gray-200 rounded-xl px-8 py-4 
+                  shadow-md shadow-myShadow2 inline-block"
+      >
+        {title}
+      </Text>
+
+
         {isBorderBottom && 
           <Box className="w-[123px] border-[3px] text-secondary border-secondary rounded-3xl mt-5 text-center"></Box>
         }

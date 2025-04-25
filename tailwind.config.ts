@@ -8,6 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'khmer-serif': [
+          'Noto Serif Khmer', // Primary font for Khmer
+          'Noto Serif',       // Primary font for English/Latin
+          'Times New Roman',  // Fallback for Latin
+          'serif',          // Generic fallback
+        ],
+
+        'khmer-battambang': [
+          'Battambang',
+          'Noto Serif',       // Subtext English
+          'Times New Roman',
+          'serif',
+        ],
+      },
       colors:{
         primary: "#223976",
         oldPrimary: "#023047",

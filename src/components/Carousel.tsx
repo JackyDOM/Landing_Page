@@ -3,13 +3,13 @@ import { Box } from '@chakra-ui/react';
 import Slider from 'react-slick';
 
 const settings = {
-  dots: false,
+  dots: true,
   arrows: false,
   fade: false,
   infinite: true,
   autoplay: true,
-  speed: 1000,
-  autoplaySpeed: 1000,
+  speed: 2000,
+  autoplaySpeed: 3000,
   slidesToShow: 7,
   slidesToScroll: 1,
   centerMode: true,

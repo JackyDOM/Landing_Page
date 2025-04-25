@@ -49,7 +49,7 @@ const Home = () => {
     <Box>
       <Navbar/>
       <Element name="/" id="/" href='' className="xl:h-[calc(100vh-130px)] w-auto"> <HeroComponent /> </Element>
-      <Element name="spr" id="spr" href=''> <SPRComponent/> </Element>
+      <Element className="mt-20" name="spr" id="spr" href=''> <SPRComponent/> </Element>
       <Element name="portal" id="portal" href=''> <PortalComponent/> </Element>
       <Element name="members" id="members" href=''> <Members/> </Element>
       <Element name="videos" id="videos" href=''> <Videos/> </Element>

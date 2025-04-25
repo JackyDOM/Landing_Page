@@ -24,6 +24,7 @@ const PortalComponent = () => {
           unoptimized
           data-aos="fade-up" 
           data-aos-delay="0"
+          className="animate-breathe"
         />
 
         <Box className="mt-12 max-w-[560px]" data-aos="fade-up" data-aos-delay="150">
@@ -51,16 +52,34 @@ const PortalComponent = () => {
           height={430} 
           loading="lazy" 
           unoptimized
-          className="mt-10 lg:mt-0"
+          className="mt-10 lg:mt-0 animate-breathe"
           data-aos="fade-up" 
           data-aos-delay="450"
         />
       </Box>
 
       <Box className="max-w-screen-2xl mx-auto pt-16 container">
-        <Heading fontSize={"30px"} textAlign={"center"}>{t("main_feature")}</Heading>
+        <Heading fontSize={"30px"} textAlign={"center"} fontFamily="Battambang">{t("main_feature")}</Heading>
 
-        <Box className="grid sm:grid-cols-2 lg:grid-cols-3 my-10 gap-7 justify-items-center">
+        <Box className="grid  
+            grid-cols-1 
+            sm:grid-cols-2 
+            md:grid-cols-3 
+            lg:grid-cols-3 
+            xs:grid-cols-2 
+            xs:grid-rows-2 
+            gap-4 
+            xs:gap-20 
+            my-10 
+            justify-items-center 
+            cursor-pointer 
+            max-w-7xl 
+            mx-auto
+            px-4
+            mt-10
+            "
+            >
+
           {FeatureList.map((feature: IFeatureProps, idx: number) => {
             const delay = idx * 200;
             return (
@@ -69,6 +88,7 @@ const PortalComponent = () => {
                 image={feature.image} 
                 title={t(`important_features.feature${idx + 1}`)}
                 delay={delay}
+                
               />
             )
           })}

@@ -17,6 +17,8 @@ const Navbar = () => {
   const t = useTranslations("MenuBar");
   const [isScrolled, setIsScrolled] = useState<boolean>(false); 
   const pathname = usePathname();
+  const [selectedMenu, setSelectedMenu] = useState<string | null>(null);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,9 +37,23 @@ const Navbar = () => {
     };
   }, [pathname]);
 
-  const handleMenuClick = () => {
+  useEffect(() => {
+    if (pathname === "/") {
+      setSelectedMenu(MenuItems[0]?.path); // Set first menu as default
+    } else {
+      setSelectedMenu(pathname); // Set selected menu based on the current path
+    }
+  }, [pathname]);
+
+  const handleMenuClick = (path: string) => {
+    setSelectedMenu(path);
     onClose();
   };
+
+  const handleMenuClick1 = () => {
+    onClose();
+  };
+  
 
   return (
     <Box 
@@ -49,8 +65,7 @@ const Navbar = () => {
         transition-shadow 
         duration-300
         border-2
-        rounded-bl-3xl 
-        rounded-br-3xl
+        shadow-2xs
         ${
           pathname === "/" && !isScrolled ? "shadow-none bg-[#f5f9ff]" : "shadow-md bg-white"
         }
@@ -79,7 +94,7 @@ const Navbar = () => {
             </div>
           </Link>
 
-          <div className="xs:hidden lg:flex lg:gap-10 xl:gap-15">
+          <div className="xs:hidden lg:flex lg:gap-10 xl:gap-19">
             {MenuItems.map((menu: IMenuList | any, idx: number) => (
               <Link 
                 key={idx}
@@ -89,15 +104,21 @@ const Navbar = () => {
                 duration={700}
                 delay={0}
                 offset={-106}
-                className="cursor-pointer font-medium hover:text-primary"
-                activeClass="text-[#4F9CF9]"
-                onClick={handleMenuClick}
+                className={`cursor-pointer font-medium font-khmer-battambang px-3 py-2 transition-all duration-200
+                  ${
+                    selectedMenu === menu.path 
+                      ? "border-b-2 border-[#4F9CF9] text-[#4F9CF9]" 
+                      : "text-gray-800"
+                  } 
+                  hover:text-[#4F9CF9]
+                `}
+                onClick={() => handleMenuClick(menu.path)}
+                onSetActive={() => setSelectedMenu(menu.path)} // 👈 ADD THIS LINE
               >
                 {t(menu.title)}
               </Link>
             ))}
           </div>
-          
           <HStack className="!flex-row-reverse lg:flex mr-1">
             <IoMdMenu 
               size={36} 
@@ -128,7 +149,7 @@ const Navbar = () => {
                 className="
                   cursor-pointer 
                   px-5 
-                  font-semibold 
+                  font-khmer-serif 
                   hover:text-primary 
                   flex 
                   items-center 
@@ -141,9 +162,9 @@ const Navbar = () => {
                   mt-2
                 "
                 activeClass="text-[#4F9CF9]"
-                onClick={handleMenuClick}
+                onClick={handleMenuClick1}
               >
-                <IconComponent size={24}/>
+                <IconComponent size={22}/>
                 {t(menu.title)}
               </Link>
             );
@@ -173,7 +194,7 @@ const DrawerSPR = ({
       finalFocusRef={btnRef}
     >
       <DrawerContent>
-        <DrawerHeader className="border-b border-slate-100 !p-5 flex items-start justify-between">
+        <DrawerHeader className="border-b border-slate-200 !p-5 flex items-start justify-between">
           <div className="relative w-[130px] h-[40px] ml-5 mt-2 mb-5">
             <Image 
               src={"/images/spr1.png"} 
@@ -183,7 +204,7 @@ const DrawerSPR = ({
             />
           </div>
           <IoCloseOutline 
-            className="text-[40px] text-blue-800 cursor-pointer mt-3 border-2 rounded-full" 
+            className="text-[40px] text-blue-800 cursor-pointer mt-3 border-blue-400 border-2 rounded-full" 
             onClick={onClose}/>
         </DrawerHeader>
         <DrawerBody padding={5}>

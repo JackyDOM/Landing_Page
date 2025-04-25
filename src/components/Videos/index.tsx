@@ -34,10 +34,6 @@ const VideoItems = [
     title: "SPR",
     link: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCAMNSPC%2Fvideos%2F1248523055334844%2F&show_text=0&width=560",
   },
-  {
-    title: "SPR1",
-    link: "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FCAMNSPC%2Fvideos%2F1248523055334844%2F&show_text=0&width=560",
-  },
 ];
 
 
@@ -102,11 +98,12 @@ const Videos = () => {
         <Flex justifyContent="center" flexWrap="wrap" gap="12">
           {VideoItems.map((video: any, idx: number) => (
             <Box
-              key={idx}
-              className="w-[350px] aspect-video bg-gray-300 rounded-lg overflow-hidden"
-              borderWidth="5px"
-              borderColor="gray.300"
-            >
+            key={idx}
+            className="w-full sm:w-[300px] md:w-[340px] lg:w-[380px] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 ease-in-out bg-white"
+            borderWidth="1px"
+            borderColor="gray.200"
+          >
+            <Box className="aspect-video bg-gray-100">
               <iframe
                 width="100%"
                 height="100%"
@@ -115,11 +112,14 @@ const Videos = () => {
                 frameBorder="0"
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 allowFullScreen
+                className="rounded-t-2xl"
               ></iframe>
-              <Box p="2" textAlign="center">
-                <h3 className="text-lg font-medium">{video.title}</h3>
-              </Box>
             </Box>
+            <Box p="4" textAlign="center">
+              <h3 className="text-lg md:text-xl font-semibold text-gray-800 font-khmer-battambang">{video.title}</h3>
+            </Box>
+          </Box>          
+          
           ))}
         </Flex>
       </SectionComponent>
